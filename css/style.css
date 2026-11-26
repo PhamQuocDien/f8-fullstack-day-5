@@ -23,6 +23,25 @@ h3{
 p{
     font-size:14px;
 }
+.nav-main{
+    height: auto;
+    font-size: 0;
+    padding:0 59px;
+    text-align: center;
+    background-color: #3e5cca;
+}
+.nav-main li{
+    display: inline-block;
+    vertical-align: top;
+}
+.nav-main li a{
+    display: inline-block;
+    padding:32px;
+    color:black;
+    text-decoration: none;  
+    font-size: 16px; 
+    background-color: white;
+}
 /* CV */
 .cv {
     max-width:980px;
