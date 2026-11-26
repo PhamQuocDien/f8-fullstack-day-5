@@ -4,18 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-            </ul>
+    <form action="" class="form" autocomplete="off">
+        <h1 class="form-heading">Register</h1>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Display Name</span>
+                <input type="text" placeholder="Display Name..." spellcheck="false" class="text-input">
+            </label>
         </div>
-    </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Email</span>
+                <input type="email" placeholder="Email Address..." spellcheck="false" class="text-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Phone Number</span>
+                <input type="number" placeholder="Phone Number..." spellcheck="false" class="text-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Password</span>
+                <input type="password" placeholder="Password..." class="text-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Confirm Password</span>
+                <input type="password" placeholder="Confirm Password..." class="text-input">
+            </label>
+        </div>
+        <div class="form-gender">
+            <label class="form-label">Gender</label>
+            <label>
+                Male
+                <input type="radio" name="gender" checked>
+            </label>
+            <label>
+                Female
+                <input type="radio" name="gender"  >
+            </label>
+            <label>
+                Other
+                <input type="radio" name="gender"  >
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Date of Birth</span>
+                <input type="date" class="text-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Address</span>
+                <input type="text" placeholder="address..." class="text-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label >
+                <span class="form-label">Profile Picture (Avatar)</span>
+                <input type="file" id="profile-picture" hidden>
+            </label>
+            <label for="profile-picture" class="form-avatar">
+                <img 
+                    width="200"
+                    src="https://tse2.mm.bing.net/th/id/OIP.yXAr22OcBhoQDLvb-Z0OXgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="avata image" 
+                    class="avatar-img">
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Communication Preferences</label>
+            <div class="form-vertial">
+                <label>
+                    Subscribe to Newsletter (Nhận bản tin định kỳ)
+                    <input type="checkbox" name="gender" checked value="newsletter">
+                </label>
+                <label >
+                    Receive Promotional Emails (Nhận thông tin khuyến mãi)
+                    <input type="checkbox" name="gender" value="emails" >
+                </label>
+                <label>
+                    Get Product Updates (Nhận cập nhật sản phẩm mới)
+                    <input type="checkbox" name="gender" value="updates" >
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button class="btn submit-btn">Register</button>
+        </div>
+    </>
 </body>
 </html>
